@@ -1,4 +1,3 @@
-// Uncomment the code below and write your tests
 import { simpleCalculator, Action } from './index';
 
 const testCases = [
@@ -17,11 +16,6 @@ const testCases = [
 ];
 
 describe('simpleCalculator', () => {
-  // This test case is just to run this test suite, remove it when you write your own tests
-  // test('should blah-blah', () => {
-  //   expect(true).toBe(true);
-  // });
-  // Consider to use Jest table tests API to test all cases above
   it.each(testCases)('simpleCalculator(%s)', ({ a, b, action, expected }) => {
     expect(simpleCalculator({ a, b, action })).toBe(expected);
   });
